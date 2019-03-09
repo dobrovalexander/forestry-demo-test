@@ -5,35 +5,35 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: heading
-  label: Content
+  label: Контент
 - type: jekyll-posts
-  label: Posts
+  label: Новости
   create: all
   templates:
   - post
 - type: jekyll-pages
-  label: Pages
+  label: Разделы
   create: all
   templates:
   - landing-page
   - page
 - type: directory
   path: _people
-  label: People
+  label: Сотрудники
   create: all
   match: "*"
   templates:
   - person
 - type: directory
   path: _projects
-  label: Projects
+  label: Проекты
   create: all
   match: "*"
   templates:
   - project
 - type: document
   path: _data/information.yml
-  label: Contact Information
+  label: Контакты
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
